@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="script.js"></script>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin: 10px;
+        }
+
+        .dashed {
+            border: 3px dashed black;
+            padding: 7px;
+        }
+        #titulo-datos {
+            text-align: center;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ejercicios de DOM y Eventos HTML</h1>
+    <div class="box">
+        <form id="formulario" action="#" method="get" onsubmit="return false">
+            <label for="nombre">Nombre</label>
+            <br>
+            <input type="text" name="nombre" id="nombre">
+            <span id="error-nombre" class="error"></span>
+            <br>
+            <label for="apellido">Apellido</label>
+            <br>
+            <input type="text" name="apellido" id="apellido">
+            <span id="error-apellido" class="error"></span>
+            <br>
+            <label for="edad">Edad</label>
+            <br>
+            <input type="text" name="edad" id="edad">
+            <span id="error-edad" class="error"></span>
+            <br>
+            <br>
+            <input id="submit" type="submit" value="Enviar">
+            <input id="reset" type="reset" value="Borrar">
+        </form>
+    </div>
+
+    <div class="box dashed">
+        <p id="titulo-datos"><strong>Información del usuario</strong></p>
+        <hr>
+        <div id="datos"></div>
+    </div>
+    
+</body>
+</html>
